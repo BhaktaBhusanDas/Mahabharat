@@ -1,0 +1,9 @@
+{
+  "name": "mahabharat",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A ten-minute retelling of the Mahabharata with a browser reader.",
+  "scripts": {
+    "check": "node --check app.js"
+  }
+}
