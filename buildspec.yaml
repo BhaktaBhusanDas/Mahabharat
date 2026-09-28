@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 22
+    commands:
+      - echo "Installing Node.js 22 runtime"
+  pre_build:
+    commands:
+      - echo "Starting source checks"
+  build:
+    commands:
+      - npm run check
+      - grep -Fq '<h1>The Mahabharata' index.html
+  post_build:
+    commands:
+      - echo "Source checks complete"
